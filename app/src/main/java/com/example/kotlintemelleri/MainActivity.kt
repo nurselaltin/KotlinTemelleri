@@ -16,11 +16,68 @@ class MainActivity : AppCompatActivity() {
 
         findViewById<FloatingActionButton>(R.id.fab).setOnClickListener { view ->
             Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                    .setAction("Action", null).show()
+                .setAction("Action", null).show()
         }
 
 
-       println("Hello")
+
+
+        println("Hello")
+
+        //Variables
+
+        //Defining
+        var fullname : String
+
+        //Initialize
+        fullname = "Nursel ALTIN"
+
+
+        var age :Int
+        age = 25
+
+        //Constants
+        val  phone : Int = 53023888
+
+
+        println("-----------Double - Float---------------")
+
+        //Double - Float
+
+        val pi : Double = 3.14
+        var a :Int = 23
+
+        println(a/2)
+        var b : Double = 23.0
+
+        println(b/2)
+        //println(pi*2)
+
+        //println("Merhaba ben "+fullname+" , yaşım "+age+", tel = "+phone)
+
+        println("-----------String---------------")
+
+        var myString = "nursel Altın"
+        println( myString.capitalize())
+
+        println("-----------Conversion---------------")
+
+        var stringVar = "10"
+
+        println(stringVar.toInt() * 2)
+
+
+        println("-----------Collections---------------")
+
+        var myArray = arrayOf("James","Rob","Alice")
+
+        println(myArray[2])
+        println(myArray.size)
+        myArray[1] = "Nursel"
+        println(myArray[1])
+
+
+
 
     }
 
@@ -40,3 +97,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 }
+
+
+
